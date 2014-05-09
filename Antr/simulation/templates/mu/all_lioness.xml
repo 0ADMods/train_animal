@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_dog">
+<Entity parent="template_tamed_attack">
   <Cost>
     <BuildTime>40</BuildTime>
     <Resources>
-      <water>60</water>
-	  <food>0</food>
+	  <food>75</food>
     </Resources>
 	<Population>1</Population>
   </Cost>
@@ -25,18 +24,12 @@
       <RepeatTime>2000</RepeatTime>
     </Melee>
   </Attack>
-  <TrainingRestrictions>
-    <Category>-WarDog</Category>
-  </TrainingRestrictions>
   <Footprint>
     <Circle radius="2.0"/>
     <Height>1.5</Height>
   </Footprint>
-  <Promotion disable=""/>
+  
   <Identity>
-    <Civ>{civ}</Civ>
-	<Classes datatype="tokens">Tamed</Classes>
-    <SpecificName>Tamed Lioness</SpecificName>
 	<GenericName>Tamed Lioness</GenericName>
     <Icon>gaia/fauna_lion.png</Icon>
   </Identity>
