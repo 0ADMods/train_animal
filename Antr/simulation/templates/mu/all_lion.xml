@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Entity parent="template_tamed_attack">
-  <Cost>
-    <BuildTime>40</BuildTime>
-    <Resources>
-	  <food>75</food>
-    </Resources>
-	<Population>1</Population>
-  </Cost>
-  <Health>
-    <Max>150</Max>
-  </Health>
-  <Armour>
-    <Hack>9</Hack>
-    <Pierce>9</Pierce>
-    <Crush>1</Crush>
-  </Armour>
   <Attack>
     <Melee>
-      <Hack>15.0</Hack>
+      <Hack>20.0</Hack>
       <Pierce>0.0</Pierce>
       <Crush>0.0</Crush>
       <MaxRange>4.0</MaxRange>
@@ -28,9 +13,8 @@
     <Circle radius="2.0"/>
     <Height>1.5</Height>
   </Footprint>
-  
   <Identity>
-	<GenericName>Tamed Lioness</GenericName>
+    <SpecificName>Tamed Lion</SpecificName>
     <Icon>gaia/fauna_lion.png</Icon>
   </Identity>
   <Position>
@@ -41,10 +25,15 @@
       <select>actor/fauna/animal/lion_select.xml</select>
       <attack>actor/fauna/animal/lion_attack.xml</attack>
       <death>actor/fauna/animal/lion_select.xml</death>
-	  <select>actor/fauna/animal/lion_select.xml</select>
     </SoundGroups>
   </Sound>
+  <UnitMotion>
+    <WalkSpeed>3.0</WalkSpeed>
+    <Run>
+      <Speed>15.0</Speed>
+    </Run>
+  </UnitMotion>
   <VisualActor>
-    <Actor>fauna/lioness.xml</Actor>
+    <Actor>fauna/lion.xml</Actor>
   </VisualActor>
 </Entity>

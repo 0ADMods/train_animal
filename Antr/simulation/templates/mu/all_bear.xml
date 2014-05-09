@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_dog">
+<Entity parent="template_tamed_attack">
   <Attack>
     <Melee>
       <Hack>20.0</Hack>
@@ -17,14 +17,10 @@
     <Pierce>9</Pierce>
     <Crush>1</Crush>
   </Armour>
-  <TrainingRestrictions>
-    <Category>-WarDog</Category>
-  </TrainingRestrictions>
   <Cost>
     <BuildTime>40</BuildTime>
     <Resources>
-      <water>100</water>
-	  <food>0</food>
+	  <food>70</food>
     </Resources>
 	<Population>1</Population>
   </Cost>
@@ -33,10 +29,7 @@
     <Height>3.5</Height>
   </Footprint>
   <Identity>
-    <Civ>{civ}</Civ>
-	<Classes datatype="tokens">Tamed</Classes>
-    <SpecificName>Attack Bear</SpecificName>
-	<GenericName>Attack Bear</GenericName>
+	<GenericName>Tamed Bear</GenericName>
     <Icon>gaia/fauna_bear.png</Icon>
   </Identity>
   <Position>
@@ -53,5 +46,5 @@
   <VisualActor>
     <Actor>fauna/bear.xml</Actor>
   </VisualActor>
-  <Promotion disable=""/>
+  
 </Entity>

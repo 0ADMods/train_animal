@@ -24,7 +24,7 @@
   </Health>
   <Identity>
     <GenericName>Corral</GenericName>
-    <Tooltip>Raise herd animals for food. Task domestic animals here to gain a trickle of food or other bonus (Not yet implemented).</Tooltip>
+    <Tooltip>Raise herd animals for food. Animal Traning-Allows for traning of animals.</Tooltip>
     <Classes datatype="tokens">
 	  Village
 	  Corral
@@ -47,6 +47,12 @@
       gaia/fauna_sheep
 	  mu/all_bear
 	  mu/all_lioness
+	  mu/all_lion
+	  mu/all_horse
+	  mu/all_muskox
+	  mu/all_tiger
+	  mu/all_wolf
+	  mu/all_wolf_snow
     </Entities>
     <Technologies datatype="tokens">
       gather_animals_stockbreeding
