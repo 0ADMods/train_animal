@@ -1,18 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Entity parent="template_unit_fauna_decorative">
+<Entity parent="template_tamed_attack">
 	<Position>
 		<Altitude>0</Altitude>
 		<Anchor>upright</Anchor>
 		<Floating>false</Floating>
 		<TurnRate>1.0</TurnRate>
 	</Position>
+  <Sound>
+    <SoundGroups>
+      <select>actor/fauna/animal/lion_select.xml</select>
+      <attack>actor/fauna/animal/lion_attack.xml</attack>
+      <death>actor/fauna/animal/lion_select.xml</death>
+	  <trained>actor/fauna/animal/sheep.xml</trained>
+    </SoundGroups>
+  </Sound>
 	<VisualActor>
 		<Actor>fauna/hawk.xml</Actor>
 	</VisualActor>
-	<UnitAI>
-		<RoamDistance>1000.0</RoamDistance>
-	</UnitAI>
-	<UnitMotion disable="" />
+  <Cost>
+    <BuildTime>40</BuildTime>
+    <Resources>
+	  <food>70</food>
+    </Resources>
+	<Population>1</Population>
+  </Cost>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>arrow/256x256.png</MainTexture>
+        <MainTextureMask>arrow/256x256_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Minimap>
+    <Type>unit</Type>
+  </Minimap>
+  <UnitMotion disable=""/>
   <UnitMotionFlying>
     <MaxSpeed>15.0</MaxSpeed>
     <TakeoffSpeed>1.0</TakeoffSpeed>

@@ -3,13 +3,20 @@
  on the map instead of just staying there,
  but not affect the gameplay in any way.
  They have a minimum number of components. -->
-<Entity>
+<Entity parent="template_unit">
 	<Position>
 		<Altitude>0</Altitude>
 		<Anchor>upright</Anchor>
 		<Floating>false</Floating>
 		<TurnRate>6.0</TurnRate>
 	</Position>
+	<Identity>
+	<Civ>{civ}</Civ>
+    <Classes datatype="tokens">Tamed Organic</Classes>
+    <GenericName>Tamed Scout Animal</GenericName>
+    <Rank>Basic</Rank>
+    <Tooltip> Scout animal!</Tooltip>
+  </Identity>
 	<Selectable>
 		<EditorOnly/>
 		<Overlay>
@@ -20,24 +27,25 @@
 		</Overlay>
 	</Selectable>
 	<UnitAI>
-		<AlertReactiveLevel>0</AlertReactiveLevel>
-		<DefaultStance>passive</DefaultStance>
-		<NaturalBehaviour>passive</NaturalBehaviour>
-		<FormationController>false</FormationController>
-		<CanGuard>false</CanGuard>
-		<RoamDistance>20</RoamDistance>
-		<FleeDistance>10.0</FleeDistance>
-		<RoamTimeMin>10000</RoamTimeMin>
-		<RoamTimeMax>100000</RoamTimeMax>
-		<FeedTimeMin>1</FeedTimeMin>
-		<FeedTimeMax>2</FeedTimeMax>
-	</UnitAI>
+    <AlertReactiveLevel>2</AlertReactiveLevel>
+    <DefaultStance>aggressive</DefaultStance>
+    <FleeDistance>12.0</FleeDistance>
+    <FormationController>false</FormationController>
+    <CanGuard>true</CanGuard>
+  </UnitAI>
 	<UnitMotion>
-		<FormationController>false</FormationController>
-		<WalkSpeed>5.0</WalkSpeed>
-		<PassabilityClass>unrestricted</PassabilityClass>
-		<CostClass>default</CostClass>
-	</UnitMotion>
+    <FormationController>false</FormationController>
+    <WalkSpeed>7.5</WalkSpeed>
+    <Run>
+      <Speed>15.0</Speed>
+      <Range>50.0</Range>
+      <RangeMin>0.0</RangeMin>
+      <RegenTime>0.1</RegenTime>
+      <DecayTime>0.2</DecayTime>
+    </Run>
+    <PassabilityClass>default</PassabilityClass>
+    <CostClass>default</CostClass>
+  </UnitMotion>
 	<Vision>
 		<RetainInFog>true</RetainInFog>
 		<Range>0</Range>
@@ -49,23 +57,14 @@
 		<VisibleInAtlasOnly>false</VisibleInAtlasOnly>
 	</VisualActor>
 	<Cost>
-    <BuildTime>10</BuildTime>
-    <Population>0</Population>
+    <Population>1</Population>
+    <PopulationBonus>0</PopulationBonus>
+    <BuildTime>1</BuildTime>
     <Resources>
-      <food>25</food>
+      <food>70</food>
       <wood>0</wood>
       <stone>0</stone>
       <metal>0</metal>
     </Resources>
   </Cost>
-  <Health>
-    <Max>30</Max>
-  </Health>
-  <Identity>
-	<Civ>{civ}</Civ>
-    <Classes datatype="tokens">Tamed Organic</Classes>
-    <GenericName>Tamed Animal</GenericName>
-  </Identity>
-  <Promotion disable=""/>
-  <ResourceGatherer disable=""/>
 </Entity>
