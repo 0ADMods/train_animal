@@ -78,7 +78,7 @@
 	<Civ>{civ}</Civ>
     <Classes datatype="tokens">Tamed Organic</Classes>
     <GenericName>Pack Animal</GenericName>
-    <Tooltip>Counters: 3x vs. Cavalry, 2x vs. Support, 1.5x vs. Animals. Cannot attack structures.</Tooltip>
+    <Tooltip>These animals where breed for carrying supplies from gather points to cities. Dropsite for food, wood, stone, and metal</Tooltip>
   </Identity>
   <Loot>
     <xp>130</xp>

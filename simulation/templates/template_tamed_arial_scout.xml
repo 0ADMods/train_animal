@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This entity file is meant to make animals move
+ on the map instead of just staying there,
+ but not affect the gameplay in any way.
+ They have a minimum number of components. -->
+<Entity parent="template_unit">
+	<Position>
+		<Altitude>0</Altitude>
+		<Anchor>upright</Anchor>
+		<Floating>false</Floating>
+		<TurnRate>6.0</TurnRate>
+	</Position>
+	<Identity>
+	<Civ>{civ}</Civ>
+    <Classes datatype="tokens">Tamed Organic</Classes>
+    <GenericName>Tamed Scout Animal</GenericName>
+    <Rank>Basic</Rank>
+    <Tooltip> Scout animal!</Tooltip>
+  </Identity>
+	<Selectable>
+		<EditorOnly/>
+		<Overlay>
+			<Texture>
+				<MainTexture>circle/128x128.png</MainTexture>
+				<MainTextureMask>circle/128x128_mask.png</MainTextureMask>
+			</Texture>
+		</Overlay>
+	</Selectable>
+	<UnitAI>
+    <AlertReactiveLevel>2</AlertReactiveLevel>
+    <DefaultStance>aggressive</DefaultStance>
+    <FleeDistance>12.0</FleeDistance>
+    <FormationController>false</FormationController>
+    <CanGuard>true</CanGuard>
+  </UnitAI>
+	<UnitMotion>
+    <FormationController>false</FormationController>
+    <WalkSpeed>7.5</WalkSpeed>
+    <Run>
+      <Speed>15.0</Speed>
+      <Range>50.0</Range>
+      <RangeMin>0.0</RangeMin>
+      <RegenTime>0.1</RegenTime>
+      <DecayTime>0.2</DecayTime>
+    </Run>
+    <PassabilityClass>default</PassabilityClass>
+    <CostClass>default</CostClass>
+  </UnitMotion>
+	<Vision>
+		<RetainInFog>true</RetainInFog>
+		<Range>0</Range>
+		<AlwaysVisible>false</AlwaysVisible>
+	</Vision>
+	<VisualActor>
+		<SilhouetteDisplay>false</SilhouetteDisplay>
+		<SilhouetteOccluder>false</SilhouetteOccluder>
+		<VisibleInAtlasOnly>false</VisibleInAtlasOnly>
+	</VisualActor>
+	<Cost>
+    <Population>1</Population>
+    <PopulationBonus>0</PopulationBonus>
+    <BuildTime>1</BuildTime>
+    <Resources>
+      <food>70</food>
+      <wood>0</wood>
+      <stone>0</stone>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+</Entity>
