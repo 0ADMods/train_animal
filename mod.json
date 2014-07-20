@@ -1,0 +1,9 @@
+{
+    "name": "train_animal",
+    "version": "0.0.17",
+    "label": "Train animals in buildings.",
+    "url": "github.com/0ADMods/train_animal",
+    "description": "Allows to train animals in buildings. Credit Mute Lovestone - a rocket of 0AD.",
+    "dependencies": ["0ad=0.0.17"],
+    "type": "functionality"
+}
