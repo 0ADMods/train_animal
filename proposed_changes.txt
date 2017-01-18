@@ -1,5 +1,2 @@
-<<<<<<< HEAD
 hope you enjoy, request balances and other things here, just put text file in here with the name as your forum user name please
-=======
-hope you enjoy, request balances and other things here, just put text file in here with the name as your forum user name please
->>>>>>> ed228d81099af85aeb8e35de53481703ede09b03
+
